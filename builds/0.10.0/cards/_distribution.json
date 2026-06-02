@@ -1,475 +1,85 @@
 {
-    "entries":  [
-                    {
-                        "category":  "阵营",
-                        "name":  "儒家",
-                        "id":  "ZY01",
-                        "count":  1
-                    },
-                    {
-                        "category":  "阵营",
-                        "name":  "道家",
-                        "id":  "ZY02",
-                        "count":  1
-                    },
-                    {
-                        "category":  "阵营",
-                        "name":  "法家",
-                        "id":  "ZY03",
-                        "count":  1
-                    },
-                    {
-                        "category":  "阵营",
-                        "name":  "墨家",
-                        "id":  "ZY04",
-                        "count":  1
-                    },
-                    {
-                        "category":  "阵营",
-                        "name":  "兵家",
-                        "id":  "ZY05",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "斥候",
-                        "id":  "ZY06",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "谋士",
-                        "id":  "ZY07",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "守将",
-                        "id":  "ZY08",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "医师",
-                        "id":  "ZY09",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "工师",
-                        "id":  "ZY10",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "死士",
-                        "id":  "ZY11",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "射手",
-                        "id":  "ZY12",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "方士",
-                        "id":  "ZY13",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "军师",
-                        "id":  "ZY14",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "药师",
-                        "id":  "ZY15",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "术师",
-                        "id":  "ZY16",
-                        "count":  1
-                    },
-                    {
-                        "category":  "职业",
-                        "name":  "诡士",
-                        "id":  "ZY17",
-                        "count":  1
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "重锤",
-                        "id":  "GZ01",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "铁壁",
-                        "id":  "GZ02",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "连斩",
-                        "id":  "GZ03",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "旋风",
-                        "id":  "GZ04",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "冲锋",
-                        "id":  "GZ05",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "坚守",
-                        "id":  "GZ06",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "破甲",
-                        "id":  "GZ07",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "闪避",
-                        "id":  "GZ08",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "反击",
-                        "id":  "GZ09",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "横扫",
-                        "id":  "GZ10",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "穿刺",
-                        "id":  "GZ11",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "护盾",
-                        "id":  "GZ12",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "狂怒",
-                        "id":  "GZ13",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "精准",
-                        "id":  "GZ14",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "毒刃",
-                        "id":  "GZ15",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "冰冻",
-                        "id":  "GZ16",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "烈焰",
-                        "id":  "GZ17",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "雷霆",
-                        "id":  "GZ18",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "暗影",
-                        "id":  "GZ19",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "圣光",
-                        "id":  "GZ20",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "荆棘",
-                        "id":  "GZ21",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "嘲讽",
-                        "id":  "GZ22",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "鼓舞",
-                        "id":  "GZ23",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "虚弱",
-                        "id":  "GZ24",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "诅咒",
-                        "id":  "GZ25",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "治疗",
-                        "id":  "GZ26",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "净化",
-                        "id":  "GZ27",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "传送",
-                        "id":  "GZ28",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "石化",
-                        "id":  "GZ29",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "分身",
-                        "id":  "GZ30",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "吸血",
-                        "id":  "GZ31",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "沉默",
-                        "id":  "GZ32",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "缴械",
-                        "id":  "GZ33",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "追击",
-                        "id":  "GZ34",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "埋伏",
-                        "id":  "GZ35",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "洞察",
-                        "id":  "GZ36",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "弹反",
-                        "id":  "GZ37",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "连击",
-                        "id":  "GZ38",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "终结",
-                        "id":  "GZ39",
-                        "count":  2
-                    },
-                    {
-                        "category":  "构筑卡",
-                        "name":  "噬魂术",
-                        "id":  "GZ40",
-                        "count":  2
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "击敌",
-                        "id":  "JB01",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "格挡",
-                        "id":  "JB02",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "闪避",
-                        "id":  "JB03",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "突进",
-                        "id":  "JB04",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "跳跃",
-                        "id":  "JB05",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "翻滚",
-                        "id":  "JB06",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "蓄力",
-                        "id":  "JB07",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "暴击",
-                        "id":  "JB08",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "防御",
-                        "id":  "JB09",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "回复",
-                        "id":  "JB10",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "疾跑",
-                        "id":  "JB11",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "招架",
-                        "id":  "JB12",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "猛击",
-                        "id":  "JB13",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "横扫",
-                        "id":  "JB14",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "刺击",
-                        "id":  "JB15",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "劈砍",
-                        "id":  "JB16",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "冲锋",
-                        "id":  "JB17",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "撤退",
-                        "id":  "JB18",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "援护",
-                        "id":  "JB19",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "断后",
-                        "id":  "JB20",
-                        "count":  3
-                    },
-                    {
-                        "category":  "基本牌",
-                        "name":  "斩将",
-                        "id":  "JB21",
-                        "count":  3
-                    }
-                ],
-    "totalCards":  78,
-    "version":  "0.10.0",
-    "totalSlots":  160
+  "entries": [
+    {"id": "ZY01", "name": "儒家", "category": "阵营", "count": 1},
+    {"id": "ZY02", "name": "道家", "category": "阵营", "count": 1},
+    {"id": "ZY03", "name": "法家", "category": "阵营", "count": 1},
+    {"id": "ZY04", "name": "墨家", "category": "阵营", "count": 1},
+    {"id": "ZY05", "name": "兵家", "category": "阵营", "count": 1},
+    {"id": "ZY06", "name": "斥候", "category": "职业", "count": 1},
+    {"id": "ZY07", "name": "谋士", "category": "职业", "count": 1},
+    {"id": "ZY08", "name": "守将", "category": "职业", "count": 1},
+    {"id": "ZY09", "name": "医师", "category": "职业", "count": 1},
+    {"id": "ZY10", "name": "工师", "category": "职业", "count": 1},
+    {"id": "ZY11", "name": "死士", "category": "职业", "count": 1},
+    {"id": "ZY12", "name": "射手", "category": "职业", "count": 1},
+    {"id": "ZY13", "name": "方士", "category": "职业", "count": 1},
+    {"id": "ZY14", "name": "军师", "category": "职业", "count": 1},
+    {"id": "ZY15", "name": "药师", "category": "职业", "count": 1},
+    {"id": "ZY16", "name": "术师", "category": "职业", "count": 1},
+    {"id": "ZY17", "name": "诡士", "category": "职业", "count": 1},
+    {"id": "BL01", "name": "重锤", "category": "兵刃", "count": 2},
+    {"id": "BL02", "name": "连弦", "category": "兵刃", "count": 2},
+    {"id": "BL03", "name": "巨弩", "category": "兵刃", "count": 2},
+    {"id": "BL04", "name": "长剑", "category": "兵刃", "count": 2},
+    {"id": "BL05", "name": "指虎", "category": "兵刃", "count": 2},
+    {"id": "BQ06", "name": "震击", "category": "宝器", "count": 2},
+    {"id": "BQ07", "name": "涌流", "category": "宝器", "count": 2},
+    {"id": "BQ08", "name": "驱散", "category": "宝器", "count": 2},
+    {"id": "BQ09", "name": "贯日", "category": "宝器", "count": 2},
+    {"id": "BQ10", "name": "金凌", "category": "宝器", "count": 2},
+    {"id": "JZ11", "name": "黯然", "category": "甲胄", "count": 2},
+    {"id": "JZ12", "name": "祈福", "category": "甲胄", "count": 2},
+    {"id": "JZ13", "name": "云龙", "category": "甲胄", "count": 2},
+    {"id": "JZ14", "name": "轻浮", "category": "甲胄", "count": 2},
+    {"id": "JZ15", "name": "收获", "category": "甲胄", "count": 2},
+    {"id": "JZ16", "name": "怜悯", "category": "甲胄", "count": 2},
+    {"id": "JZ17", "name": "启示", "category": "甲胄", "count": 2},
+    {"id": "JZ18", "name": "光铸", "category": "甲胄", "count": 2},
+    {"id": "JZ19", "name": "纯洁", "category": "甲胄", "count": 2},
+    {"id": "JZ20", "name": "荆棘", "category": "甲胄", "count": 2},
+    {"id": "WX21", "name": "浮光", "category": "武学", "count": 2},
+    {"id": "WX22", "name": "寻岚", "category": "武学", "count": 2},
+    {"id": "WX23", "name": "摘星", "category": "武学", "count": 2},
+    {"id": "WX24", "name": "清雪", "category": "武学", "count": 2},
+    {"id": "WX25", "name": "掠影", "category": "武学", "count": 2},
+    {"id": "WX26", "name": "崩山", "category": "武学", "count": 2},
+    {"id": "WX27", "name": "七伤", "category": "武学", "count": 2},
+    {"id": "WX28", "name": "饮冰", "category": "武学", "count": 2},
+    {"id": "WX29", "name": "闻水", "category": "武学", "count": 2},
+    {"id": "WX30", "name": "止波", "category": "武学", "count": 2},
+    {"id": "SF31", "name": "吸灵术", "category": "术法", "count": 2},
+    {"id": "SF32", "name": "叠咒术", "category": "术法", "count": 2},
+    {"id": "SF33", "name": "定身术", "category": "术法", "count": 2},
+    {"id": "SF34", "name": "冰棱术", "category": "术法", "count": 2},
+    {"id": "SF35", "name": "观微术", "category": "术法", "count": 2},
+    {"id": "SF36", "name": "连脉术", "category": "术法", "count": 2},
+    {"id": "SF37", "name": "炎轰术", "category": "术法", "count": 2},
+    {"id": "SF38", "name": "落雷术", "category": "术法", "count": 2},
+    {"id": "SF39", "name": "圣愈术", "category": "术法", "count": 2},
+    {"id": "SF40", "name": "噬魂术", "category": "术法", "count": 2},
+    {"id": "JB01", "name": "击敌", "category": "基本牌", "count": 12},
+    {"id": "JB02", "name": "御守", "category": "基本牌", "count": 6},
+    {"id": "JB03", "name": "疗伤", "category": "基本牌", "count": 6},
+    {"id": "JB04", "name": "聚气", "category": "基本牌", "count": 6},
+    {"id": "JB05", "name": "探物", "category": "基本牌", "count": 5},
+    {"id": "JB06", "name": "备物", "category": "基本牌", "count": 8},
+    {"id": "JB07", "name": "反戈", "category": "基本牌", "count": 1},
+    {"id": "JB08", "name": "披甲", "category": "基本牌", "count": 4},
+    {"id": "JB09", "name": "除障", "category": "基本牌", "count": 2},
+    {"id": "JB10", "name": "蓄势", "category": "基本牌", "count": 4},
+    {"id": "JB11", "name": "整军", "category": "基本牌", "count": 7},
+    {"id": "JB12", "name": "聚气增", "category": "基本牌", "count": 4},
+    {"id": "JB13", "name": "固甲", "category": "基本牌", "count": 4},
+    {"id": "JB14", "name": "冲阵", "category": "基本牌", "count": 2},
+    {"id": "JB15", "name": "急疗", "category": "基本牌", "count": 4},
+    {"id": "JB16", "name": "扰敌", "category": "基本牌", "count": 5},
+    {"id": "JB17", "name": "备阵", "category": "基本牌", "count": 5},
+    {"id": "JB18", "name": "传令", "category": "基本牌", "count": 5},
+    {"id": "JB19", "name": "调息", "category": "基本牌", "count": 5},
+    {"id": "JB20", "name": "仿技", "category": "基本牌", "count": 2},
+    {"id": "JB21", "name": "斩将", "category": "基本牌", "count": 3}
+  ],
+  "total_card_types": 78,
+  "total_instances": 178,
+  "version": "0.10.0"
 }
