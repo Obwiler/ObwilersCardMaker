@@ -1,0 +1,10 @@
+[package]
+name = "devtools"
+version.workspace = true
+edition.workspace = true
+description = "AI 辅助开发测试模块 — 编译检查/单元测试/构建验证"
+
+[dependencies]
+core = { path = "../core", package = "cardmaker-core" }
+serde.workspace = true
+serde_json.workspace = true

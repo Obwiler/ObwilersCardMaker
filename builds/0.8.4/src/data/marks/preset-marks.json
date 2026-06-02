@@ -1,0 +1,54 @@
+[
+  {
+    "id": "mark_renxin",
+    "version": "1.0",
+    "name": "仁心",
+    "displayName": "仁心",
+    "description": "儒家核心标记，提升生命恢复效果",
+    "icon": "",
+    "type": "positive",
+    "maxStack": 99,
+    "duration": 0,
+    "stackingType": "add_value",
+    "expireBehavior": "remove_all"
+  },
+  {
+    "id": "mark_fengbao",
+    "version": "1.0",
+    "name": "锋爆",
+    "displayName": "锋爆",
+    "description": "兵家核心标记，提升攻击伤害",
+    "icon": "",
+    "type": "positive",
+    "maxStack": 99,
+    "duration": 0,
+    "stackingType": "add_value",
+    "expireBehavior": "remove_all"
+  },
+  {
+    "id": "mark_jianyi",
+    "version": "1.0",
+    "name": "坚毅",
+    "displayName": "坚毅",
+    "description": "增加护甲",
+    "icon": "",
+    "type": "positive",
+    "maxStack": 10,
+    "duration": 3,
+    "stackingType": "add_count",
+    "expireBehavior": "remove_one"
+  },
+  {
+    "id": "mark_xuruo",
+    "version": "1.0",
+    "name": "虚弱",
+    "displayName": "虚弱",
+    "description": "减少攻击",
+    "icon": "",
+    "type": "negative",
+    "maxStack": 5,
+    "duration": 2,
+    "stackingType": "add_count",
+    "expireBehavior": "remove_one"
+  }
+]

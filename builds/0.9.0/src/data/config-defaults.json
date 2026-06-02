@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "game": {
+    "max_deck_size": 30,
+    "max_card_count": 2,
+    "max_skill_count": 5,
+    "max_tag_count": 10,
+    "min_cooldown": 0,
+    "max_cooldown": 99,
+    "default_mark_max_stack": 99,
+    "default_mark_duration": 0
+  },
+  "attributes": {
+    "max_attribute_values": {
+      "life": 16,
+      "armor": 12,
+      "energy": 10,
+      "attack": 99,
+      "defense": 99,
+      "speed": 99,
+      "crit_rate": 100
+    },
+    "default_attribute_values": {
+      "life": 0,
+      "armor": 0,
+      "energy": 0,
+      "attack": 1,
+      "defense": 0,
+      "speed": 0,
+      "crit_rate": 0
+    }
+  },
+  "visual": {
+    "card_width": 360,
+    "card_height": 500,
+    "card_border_radius": 16,
+    "export_scale": 3
+  },
+  "export": {
+    "format": "JSON",
+    "png_quality": 1.0,
+    "include_custom_marks": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mark_jianyi",
+  "version": "1.0",
+  "createdAt": 1748563200000,
+  "updatedAt": 1748563200000,
+  "name": "jianyi",
+  "displayName": "坚毅",
+  "description": "增加护甲的正面标记",
+  "icon": "/icons/marks/jianyi.png",
+  "type": "positive",
+  "maxStack": 10,
+  "duration": 3,
+  "stackingType": "add_value",
+  "expireBehavior": "remove_one",
+  "onAdd": [],
+  "onRemove": [],
+  "onStackChange": [],
+  "onExpire": []
+}

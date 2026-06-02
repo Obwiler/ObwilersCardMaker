@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ObwilerCardMaker 卡牌数据 Schema",
+  "description": "定义 cards.json 的数据结构规范，用于校验卡牌数据的完整性和正确性",
+  "type": "object",
+  "required": ["cards", "_meta"],
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "description": "数据文件的元信息，由程序自动维护",
+      "required": ["version", "last_modified", "save_count", "checksum"],
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "数据格式版本号，与程序版本对齐"
+        },
+        "last_modified": {
+          "type": "string",
+          "description": "最后修改时间，ISO8601 格式"
+        },
+        "save_count": {
+          "type": "integer",
+          "description": "累计保存次数，每次 save_cards 自增",
+          "minimum": 0
+        },
+        "checksum": {
+          "type": "string",
+          "description": "cards 数组内容的 SHA256 前 8 位十六进制"
+        }
+      }
+    },
+    "cards": {
+      "type": "array",
+      "description": "卡牌数据数组，每张卡牌包含完整属性",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "list_tags", "pre_tag", "duel_tags", "text", "created_at", "modified_at"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "卡牌唯一标识，格式为 card_NNN（如 card_001）",
+            "pattern": "^card_\\d{3,}$"
+          },
+          "name": {
+            "type": "string",
+            "description": "卡牌名称，中文或英文",
+            "minLength": 1
+          },
+          "list_tags": {
+            "type": "array",
+            "description": "卡牌所属的标签列表（如阵营、基本牌）",
+            "items": { "type": "string" }
+          },
+          "pre_tag": {
+            "type": "array",
+            "description": "卡牌的预制属性标签（如生命8、护甲2）",
+            "items": { "type": "string" }
+          },
+          "duel_tags": {
+            "type": "array",
+            "description": "对峙标签列表，由解析器自动填充",
+            "items": { "type": "string" }
+          },
+          "text": {
+            "type": "string",
+            "description": "卡牌技能文本，五段式语法格式"
+          },
+          "created_at": {
+            "type": "string",
+            "description": "创建日期，YYYY-MM-DD 格式"
+          },
+          "modified_at": {
+            "type": "string",
+            "description": "最后修改日期，YYYY-MM-DD 格式"
+          }
+        }
+      }
+    }
+  }
+}

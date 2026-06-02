@@ -1,0 +1,19 @@
+{
+  "id": "mark_renxin",
+  "version": "1.0",
+  "createdAt": 1748563200000,
+  "updatedAt": 1748563200000,
+  "name": "renxin",
+  "displayName": "仁心",
+  "description": "儒家阵营的核心标记，可用于兑换技力或抽牌",
+  "icon": "/icons/marks/renxin.png",
+  "type": "positive",
+  "maxStack": 99,
+  "duration": 0,
+  "stackingType": "add_count",
+  "expireBehavior": "persist",
+  "onAdd": [],
+  "onRemove": [],
+  "onStackChange": [],
+  "onExpire": []
+}

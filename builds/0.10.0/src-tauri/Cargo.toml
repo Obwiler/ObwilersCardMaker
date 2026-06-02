@@ -1,0 +1,28 @@
+[package]
+name = "dz-cardmaker"
+version.workspace = true
+edition.workspace = true
+description = "DZ CardMaker - 对峙卡牌设计工具"
+authors = ["DZ CardMaker Team"]
+
+[package.metadata]
+product-name = "DZ CardMaker"
+file-description = "DZ CardMaker"
+legal-copyright = "Copyright © 2026. All rights reserved."
+
+[lib]
+name = "dz_cardmaker_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde.workspace = true
+serde_json.workspace = true
+dz-cardmaker-ports = { path = "crates/ports" }
+dz-cardmaker-domain = { path = "crates/domain" }
+dz-cardmaker-infra = { path = "crates/infra" }
+dz-cardmaker-app = { path = "crates/app" }

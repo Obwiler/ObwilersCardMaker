@@ -1,0 +1,355 @@
+{
+  "conditions": [
+    {
+      "id": "cond_1",
+      "name": "目标生命阈值",
+      "desc": "当 {target} 的生命值 {compare} {value}% 时",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "承接", "敌方单位", "友方单位"],
+          "default": "自己"
+        },
+        {
+          "key": "compare",
+          "label": "比较",
+          "type": "select",
+          "options": ["低于", "高于", "等于"],
+          "default": "低于"
+        },
+        {
+          "key": "value",
+          "label": "百分比",
+          "type": "number",
+          "min": 1,
+          "max": 100,
+          "default": 50
+        }
+      ]
+    },
+    {
+      "id": "cond_2",
+      "name": "目标拥有层数",
+      "desc": "当 {target} 拥有 {stackName} 层数 {compare} {value} 时",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "承接", "敌方单位", "友方单位"],
+          "default": "自己"
+        },
+        {
+          "key": "stackName",
+          "label": "层数名称",
+          "type": "string",
+          "default": "增益"
+        },
+        {
+          "key": "compare",
+          "label": "比较",
+          "type": "select",
+          "options": ["大于", "小于", "等于"],
+          "default": "大于"
+        },
+        {
+          "key": "value",
+          "label": "层数值",
+          "type": "number",
+          "min": 1,
+          "max": 99,
+          "default": 3
+        }
+      ]
+    },
+    {
+      "id": "cond_3",
+      "name": "随机概率",
+      "desc": "有 {chance}% 的概率触发",
+      "params": [
+        {
+          "key": "chance",
+          "label": "概率",
+          "type": "number",
+          "min": 1,
+          "max": 100,
+          "default": 50
+        }
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "id": "cost_1",
+      "name": "消耗生命",
+      "desc": "消耗 {target} {value} 点生命值",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位"],
+          "default": "自己"
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "type": "number",
+          "min": 1,
+          "max": 999,
+          "default": 10
+        }
+      ]
+    },
+    {
+      "id": "cost_2",
+      "name": "消耗能量",
+      "desc": "消耗 {target} {value} 点能量",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位"],
+          "default": "自己"
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "type": "number",
+          "min": 1,
+          "max": 999,
+          "default": 5
+        }
+      ]
+    },
+    {
+      "id": "cost_3",
+      "name": "消耗护甲",
+      "desc": "消耗 {target} {value} 点护甲",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位"],
+          "default": "自己"
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "type": "number",
+          "min": 1,
+          "max": 999,
+          "default": 5
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "eff_1",
+      "name": "造成伤害",
+      "desc": "对 {target} 造成 {value} 点伤害",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["敌方单位", "所有敌方", "承接", "随机敌方"],
+          "default": "敌方单位"
+        },
+        {
+          "key": "value",
+          "label": "伤害值",
+          "type": "number",
+          "min": 1,
+          "max": 999,
+          "default": 10
+        }
+      ]
+    },
+    {
+      "id": "eff_2",
+      "name": "治疗生命",
+      "desc": "为 {target} 恢复 {value} 点生命值",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位", "所有友方", "承接"],
+          "default": "自己"
+        },
+        {
+          "key": "value",
+          "label": "治疗量",
+          "type": "number",
+          "min": 1,
+          "max": 999,
+          "default": 10
+        }
+      ]
+    },
+    {
+      "id": "eff_3",
+      "name": "获得护甲",
+      "desc": "{target} 获得 {value} 点护甲",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位", "所有友方", "承接"],
+          "default": "自己"
+        },
+        {
+          "key": "value",
+          "label": "护甲值",
+          "type": "number",
+          "min": 1,
+          "max": 999,
+          "default": 5
+        }
+      ]
+    },
+    {
+      "id": "eff_4",
+      "name": "获得能量",
+      "desc": "{target} 获得 {value} 点能量",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位", "所有友方", "承接"],
+          "default": "自己"
+        },
+        {
+          "key": "value",
+          "label": "能量值",
+          "type": "number",
+          "min": 1,
+          "max": 999,
+          "default": 3
+        }
+      ]
+    },
+    {
+      "id": "eff_5",
+      "name": "添加层数",
+      "desc": "给 {target} 添加 {stackName} {value} 层",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位", "敌方单位", "承接"],
+          "default": "自己"
+        },
+        {
+          "key": "stackName",
+          "label": "层数名称",
+          "type": "string",
+          "default": "增益"
+        },
+        {
+          "key": "value",
+          "label": "层数",
+          "type": "number",
+          "min": 1,
+          "max": 99,
+          "default": 1
+        },
+        {
+          "key": "timing",
+          "label": "时机",
+          "type": "select",
+          "options": ["立即", "回合开始", "回合结束"],
+          "default": "立即"
+        },
+        {
+          "key": "stacking",
+          "label": "叠加方式",
+          "type": "select",
+          "options": ["替换", "叠加", "取高", "取低"],
+          "default": "叠加"
+        }
+      ]
+    },
+    {
+      "id": "eff_6",
+      "name": "移除层数",
+      "desc": "移除 {target} 的 {stackName} {value} 层",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位", "敌方单位", "承接"],
+          "default": "自己"
+        },
+        {
+          "key": "stackName",
+          "label": "层数名称",
+          "type": "string",
+          "default": "减益"
+        },
+        {
+          "key": "value",
+          "label": "层数",
+          "type": "number",
+          "min": 1,
+          "max": 99,
+          "default": 1
+        }
+      ]
+    },
+    {
+      "id": "eff_7",
+      "name": "抽取卡牌",
+      "desc": "{target} 抽取 {value} 张卡牌",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "友方单位", "所有友方"],
+          "default": "自己"
+        },
+        {
+          "key": "value",
+          "label": "张数",
+          "type": "number",
+          "min": 1,
+          "max": 10,
+          "default": 1
+        }
+      ]
+    },
+    {
+      "id": "eff_8",
+      "name": "丢弃卡牌",
+      "desc": "{target} 丢弃 {value} 张卡牌",
+      "params": [
+        {
+          "key": "target",
+          "label": "目标",
+          "type": "select",
+          "options": ["自己", "敌方单位", "所有敌方"],
+          "default": "敌方单位"
+        },
+        {
+          "key": "value",
+          "label": "张数",
+          "type": "number",
+          "min": 1,
+          "max": 10,
+          "default": 1
+        }
+      ]
+    }
+  ]
+}

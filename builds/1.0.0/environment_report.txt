@@ -1,0 +1,82 @@
+================================================================================
+  ObwilerCardMaker v1.0.0 环境检测报告
+  检测时间: 2026-06-01
+================================================================================
+
+[1] JDK (Java Development Kit)
+  状态: ❌ 未安装
+  详情: java 命令未找到，JAVA_HOME 未设置
+  安装指引: 下载 Adoptium JDK 17+
+    - https://adoptium.net/download/
+    - 安装后设置 JAVA_HOME 环境变量
+
+[2] Android SDK
+  状态: ❌ 未安装
+  详情: ANDROID_HOME 未设置，%LOCALAPPDATA%\Android\Sdk 不存在
+  安装指引: 安装 Android Studio 或单独安装 SDK
+    - https://developer.android.com/studio
+    - 设置 ANDROID_HOME=%LOCALAPPDATA%\Android\Sdk
+
+[3] Android NDK
+  状态: ❌ 未安装
+  详情: SDK 未安装，NDK 无法检测
+  安装指引: Android Studio → SDK Manager → SDK Tools → NDK (Side by side)
+
+[4] Rust
+  状态: ✅ 已安装
+  版本: rustc 1.96.0, cargo 1.96.0
+  路径: E:\tools\rust\bin\rustc.exe
+  注意: rustup 默认版本未配置（不影响 cargo build）
+
+[5] Node.js
+  状态: ✅ 已安装
+  版本: Node.js v24.16.0, pnpm 11.5.0
+  路径: E:\tools\node\node.exe
+  全局 pnpm: C:\Users\26424\AppData\Roaming\npm\node_modules\pnpm
+
+[6] Tauri CLI
+  状态: ✅ 已安装 (via npm)
+  版本: @tauri-apps/cli 2.11.2
+  使用方式: npx @tauri-apps/cli <command> 或在项目目录下 pnpm tauri <command>
+
+================================================================================
+  总结
+================================================================================
+  ✅ 桌面端 (EXE) 构建环境: 就绪 (Rust + Node.js + Tauri CLI 齐备)
+  ❌ Android (APK) 构建环境: 不可用 (JDK / SDK / NDK 均缺失)
+  
+  本次仅构建 Windows EXE 产物，APK 构建待环境补齐后另行执行。
+
+================================================================================
+  构建结果 (2026-06-01)
+================================================================================
+  [第一次构建 - cargo build --release]
+  [1] pnpm install: ✅ 成功 (177 packages, 4s)
+  [2] pnpm build:   ✅ 成功 (tsc + vite, 80 modules, 754ms)
+  [3] cargo build --release: ✅ 成功 (46.63s)
+  产物: ObwilerCardMaker_1.0.0_x64.exe (空壳，未嵌入前端资源)
+  修复: data_gov.rs: E0502 借用冲突修复 (HashSet<&str> → HashSet<String>)
+
+  [第二次构建 - cargo tauri build（修复打包问题）]
+  [1] 工具链恢复: 安装 Rust 1.96.0 (winget install Rustlang.Rustup)
+  [2] pnpm build:   ✅ 成功 (tsc + vite, 80 modules, ~800ms)
+  [3] pnpm tauri build --bundles nsis: ✅ 成功
+       - 自动构建前端 → 编译 Rust → 嵌入资源 → 生成 NSIS 安装包
+  [4] 配置修改:
+       - tauri.conf.json: 新增 bundle 配置段 (NSIS currentUser 安装模式)
+       - tauri.conf.json: 图标引用精简为仅 icon.ico
+
+  产物:
+  - ObwilerCardMaker_1.0.0_x64.exe        10.60 MB  (builds/1.0.0/)  ← 嵌入前端资源
+  - CardMaker_1.0.0_x64-setup.exe          2.47 MB  (builds/1.0.0/)  ← NSIS 安装包
+  
+  验证:
+  - 嵌入 HTML 前端:  ✅
+  - 嵌入 CSS bundle: ✅
+  - 嵌入 JS bundle:  ✅
+  - Tauri IPC 就绪:  ✅
+  
+  问题修复:
+  - 之前 cargo build --release 仅生成 Rust 后端空壳
+  - 现在 cargo tauri build 正确嵌入前端 dist 资源并生成安装包
+================================================================================

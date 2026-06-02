@@ -1,0 +1,86 @@
+{
+  "forbidden": [
+    {
+      "id": "F01",
+      "desc": "主语为'自身'时，宾语禁止含'敌方'",
+      "check": "subject_self_vs_enemy_object"
+    },
+    {
+      "id": "F02",
+      "desc": "备注中禁止出现动词（造成/获得/失去/恢复等）",
+      "check": "note_no_predicate"
+    },
+    {
+      "id": "F03",
+      "desc": "备注中禁止出现条件判断词（如果/则/否则）",
+      "check": "note_no_condition"
+    },
+    {
+      "id": "F04",
+      "desc": "备注中禁止出现数值公式",
+      "check": "note_no_formula"
+    },
+    {
+      "id": "F05",
+      "desc": "备注中禁止出现附加效果",
+      "check": "note_no_extra_effect"
+    },
+    {
+      "id": "F06",
+      "desc": "同一层级禁止出现两个动词",
+      "check": "single_predicate_per_level"
+    },
+    {
+      "id": "F07",
+      "desc": "主语切换时必须拆分为独立条目",
+      "check": "subject_change_split"
+    },
+    {
+      "id": "F08",
+      "desc": "L2/L3 必须有对应的上级条目",
+      "check": "parent_level_exists"
+    }
+  ],
+  "selfCheck": [
+    {
+      "id": "S01",
+      "desc": "所有 {N} 数值参数是否已填写具体值",
+      "check": "param_N_filled"
+    },
+    {
+      "id": "S02",
+      "desc": "所有 {X} 类型参数是否已填写具体值",
+      "check": "param_X_filled"
+    },
+    {
+      "id": "S03",
+      "desc": "条件栏为'—'或'被动'时是否合理",
+      "check": "empty_condition_valid"
+    },
+    {
+      "id": "S04",
+      "desc": "主语是否从15个合法选项中选取",
+      "check": "subject_valid"
+    },
+    {
+      "id": "S05",
+      "desc": "谓语是否从动词库中选取",
+      "check": "predicate_valid"
+    },
+    {
+      "id": "S06",
+      "desc": "宾语模板是否与谓语兼容",
+      "check": "object_predicate_match"
+    },
+    {
+      "id": "S07",
+      "desc": "备注分类是否属于4类合法类型之一",
+      "check": "note_category_valid"
+    },
+    {
+      "id": "S08",
+      "desc": "嵌套层级是否不超过L3",
+      "check": "level_depth_max_3"
+    }
+  ]
+}

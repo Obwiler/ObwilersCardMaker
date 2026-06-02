@@ -1,0 +1,19 @@
+{
+  "id": "mark_xuruo",
+  "version": "1.0",
+  "createdAt": 1748563200000,
+  "updatedAt": 1748563200000,
+  "name": "xuruo",
+  "displayName": "虚弱",
+  "description": "减少攻击的负面标记",
+  "icon": "/icons/marks/xuruo.png",
+  "type": "negative",
+  "maxStack": 5,
+  "duration": 2,
+  "stackingType": "replace",
+  "expireBehavior": "remove_all",
+  "onAdd": [],
+  "onRemove": [],
+  "onStackChange": [],
+  "onExpire": []
+}

@@ -1,0 +1,10 @@
+[package]
+name = "duel"
+version = "0.9.1"
+description = "对峙规则引擎 — 状态机/效果解析/执行器"
+authors = ["Obwiler"]
+edition = "2021"
+
+[dependencies]
+core = { path = "../core", package = "cardmaker-core" }
+serde.workspace = true

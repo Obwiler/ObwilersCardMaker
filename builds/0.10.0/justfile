@@ -1,0 +1,57 @@
+# DZ CardMaker — Just 命令集
+# 用法: just <命令>        # 列出可用命令
+#       just build         # 编译全部
+#       just test          # 跑全量测试
+
+# ─── 编译 ──────────────────────────────────────────
+build:
+    cargo check --workspace
+
+build-release:
+    cargo build --workspace --release
+
+# ─── 测试 ──────────────────────────────────────────
+test:
+    cargo test --workspace
+
+test-quick:
+    cargo test -p dz-cardmaker-infra --lib
+
+test-all:
+    cargo test --workspace -- --nocapture
+
+test-release:
+    cargo test --workspace --release
+
+# ─── 代码质量 ──────────────────────────────────────
+lint:
+    cargo clippy --workspace -- -D warnings
+
+fmt:
+    cargo fmt -- --check
+
+fmt-fix:
+    cargo fmt
+
+# ─── 清理 ──────────────────────────────────────────
+clean:
+    cargo clean
+
+clean-debug:
+    Remove-Item -Recurse -Force target/debug -ErrorAction SilentlyContinue
+
+# ─── 构建产物 ──────────────────────────────────────
+preview:
+    cargo test -p dz-cardmaker-app -- --nocapture
+
+# ─── 项目统计 ──────────────────────────────────────
+stats:
+    @echo "=== 项目统计 ==="
+    @echo "Rust 源文件:"
+    Get-ChildItem src-tauri -Recurse -Filter "*.rs" | Where-Object { $_.FullName -notmatch "\\target\\" } | Measure-Object | Select-Object -ExpandProperty Count
+    @echo "TS/TSX 文件:"
+    Get-ChildItem src -Recurse -Include "*.ts","*.tsx" | Measure-Object | Select-Object -ExpandProperty Count
+    @echo "card.dz 文件:"
+    Get-ChildItem cards -Recurse -Filter "card.dz" | Measure-Object | Select-Object -ExpandProperty Count
+    @echo "测试用例数:"
+    cargo test --workspace -- --list 2>$null | Measure-Object -Line | Select-Object -ExpandProperty Lines

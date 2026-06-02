@@ -1,0 +1,19 @@
+{
+  "id": "mark_fengbao",
+  "version": "1.0",
+  "createdAt": 1748563200000,
+  "updatedAt": 1748563200000,
+  "name": "fengbao",
+  "displayName": "锋爆",
+  "description": "兵家阵营的核心标记，用于强化攻击",
+  "icon": "/icons/marks/fengbao.png",
+  "type": "positive",
+  "maxStack": 99,
+  "duration": 0,
+  "stackingType": "add_count",
+  "expireBehavior": "persist",
+  "onAdd": [],
+  "onRemove": [],
+  "onStackChange": [],
+  "onExpire": []
+}

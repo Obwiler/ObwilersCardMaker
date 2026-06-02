@@ -1,0 +1,11 @@
+# ObwilerCardMaker — Cargo 配置
+# 镜像 + LLD 链接器加速
+
+[source.crates-io]
+replace-with = "tuna"
+
+[source.tuna]
+registry = "sparse+https://mirrors.tuna.tsinghua.edu.cn/crates.io-index/"
+
+[target.x86_64-pc-windows-msvc]
+linker = "F:/TOOLS/rust/lib/rustlib/x86_64-pc-windows-msvc/bin/rust-lld.exe"

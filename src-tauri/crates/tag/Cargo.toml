@@ -1,0 +1,10 @@
+[package]
+name = "tag"
+version = "0.9.1"
+description = "标签字典模块 — 15标签数据模型与查询API"
+authors = ["Obwiler"]
+edition = "2021"
+
+[dependencies]
+core = { path = "../core", package = "cardmaker-core" }
+serde.workspace = true

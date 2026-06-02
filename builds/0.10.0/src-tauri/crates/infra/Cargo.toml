@@ -1,0 +1,19 @@
+[package]
+name = "dz-cardmaker-infra"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+dz-cardmaker-ports = { path = "../ports" }
+dz-cardmaker-domain = { path = "../domain" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+log.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+rand = "0.8"
+
+[dev-dependencies]
+tempfile = "3"

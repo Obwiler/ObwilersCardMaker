@@ -1,0 +1,22 @@
+[workspace]
+members = [
+    "src-tauri",
+    "src-tauri/crates/domain",
+    "src-tauri/crates/ports",
+    "src-tauri/crates/infra",
+    "src-tauri/crates/app",
+    "src-tauri/crates/test-suite",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.10.0"
+edition = "2021"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+uuid = { version = "1", features = ["v4"] }
+log = "0.4"
+chrono = "0.4"

@@ -1,0 +1,11 @@
+[package]
+name = "dz-cardmaker-test-suite"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+dz-cardmaker-ports = { path = "../ports" }
+dz-cardmaker-domain = { path = "../domain" }
+dz-cardmaker-infra = { path = "../infra" }
+serde_json.workspace = true
+tempfile = "3"

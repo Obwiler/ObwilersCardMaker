@@ -1,0 +1,8 @@
+[package]
+name = "dz-cardmaker-domain"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+dz-cardmaker-ports = { path = "../ports" }
+serde.workspace = true
